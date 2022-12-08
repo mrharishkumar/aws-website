@@ -4,4 +4,4 @@ WORKDIR /app
 COPY . /app
 
 FROM nginx
-COPY --from=build-step /app/build /usr/share/nginx/html
+COPY --from=build-step /app /usr/share/nginx/html
